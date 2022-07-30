@@ -1,5 +1,12 @@
 import { Tooltip, Fab, Modal, Typography, Box, styled, Avatar, TextField, Stack} from '@mui/material';
-import { Add as AddIcon} from '@mui/icons-material'
+import { 
+    Add as AddIcon, 
+    DateRange,
+    EmojiEmotions,
+    Image,
+    PersonAdd,
+    VideoCameraBack,
+} from '@mui/icons-material'
 import React, { useState } from 'react';
 
 const StyledModal = styled(Modal)({
@@ -47,9 +54,9 @@ function Add() {
                 rows={4}
                 placeholder="'What's on your mind?"
                 variant="standard"
-                sx={{ width:'90%', m: 2}}
+                sx={{ width:'90%', ml: 2}}
             />
-            <Stack direction="row" gap={1} mt={2} mb={3}>
+            <Stack direction="row" gap={1} mt={2} mb={3} ml={2}>
                 <EmojiEmotions color="primary" />
                 <Image color="secondary" />
                 <VideoCameraBack color="success" />
