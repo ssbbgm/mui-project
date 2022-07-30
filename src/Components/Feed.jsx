@@ -1,6 +1,7 @@
 import React from "react";
-import {Box, Card, CardHeader, Avatar, IconButton,  CardMedia, CardContent, CardActions, Typography} from '@mui/material';
-import { Favorite, MoreVert, Share } from "@mui/icons-material";
+import {Box, Card, CardHeader, Avatar, IconButton,  CardMedia, CardContent, CardActions, Typography, Checkbox} from '@mui/material';
+import { Favorite, MoreVert, Share, FavoriteBorder } from "@mui/icons-material";
+import food from '../Images/food.jpg';
 
 const Feed = () => {
     return (
@@ -22,8 +23,8 @@ const Feed = () => {
                 />
                 <CardMedia
                     component="img"
-                    height="194"
-                    image="/static/images/cards/paella.jpg"
+                    height="20%"
+                    image={food}
                     alt="Paella dish"
                 />
                 <CardContent>
@@ -35,7 +36,7 @@ const Feed = () => {
                 </CardContent>
                 <CardActions disableSpacing>
                     <IconButton aria-label="add to favorites">
-                        <Favorite />
+                        <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite sx={{ color: 'red'}} />} />
                     </IconButton>
                     <IconButton aria-label="share">
                         <Share />
