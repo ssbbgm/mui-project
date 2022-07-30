@@ -1,6 +1,6 @@
 import React from "react";
 import {Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from '@mui/material';
-import { Home, Article, People, Storefront } from "@mui/icons-material";
+import { Home, Article, People, Storefront, Settings, AccountBox } from "@mui/icons-material";
 
 const Sidebar = () => {
     return (
@@ -51,19 +51,19 @@ const Sidebar = () => {
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
+                    <ListItemButton component='a' href='#settings'>
                         <ListItemIcon>
-                            <Home/>
+                            <Settings/>
                         </ListItemIcon>
-                        <ListItemText primary="Homepage" />
+                        <ListItemText primary="Settings" />
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
+                    <ListItemButton component='a' href='#profile'>
                         <ListItemIcon>
-                            <Home/>
+                            <AccountBox/>
                         </ListItemIcon>
-                        <ListItemText primary="Homepage" />
+                        <ListItemText primary="Profile" />
                     </ListItemButton>
                 </ListItem>
             </List>
