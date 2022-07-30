@@ -1,4 +1,4 @@
-import { Tooltip, Fab, Modal, Typography, Box, styled, Avatar, TextField, Stack, Button, ButtonGroup} from '@mui/material';
+import { Container, Tooltip, Fab, Modal, Typography, Box, styled, Avatar, TextField, Stack, Button, ButtonGroup} from '@mui/material';
 import { 
     Add as AddIcon, 
     DateRange,
@@ -62,10 +62,12 @@ function Add() {
                 <VideoCameraBack color="success" />
                 <PersonAdd color="error" />
           </Stack>
-          <ButtonGroup fullWidth variant="contained" aria-label="outlined primary button group" mb={1}>
-            <Button>Post</Button>
-            <Button><DateRange/></Button>
-        </ButtonGroup>
+          <Container sx={{display:'flex', justifyContent:'center'}}>
+            <ButtonGroup  variant="contained" aria-label=" outlined primary button group" >
+                <Button>Post</Button>
+                <Button sx={{ width: "50px" }}><DateRange/></Button>
+            </ButtonGroup>
+        </Container>
         </Box>
       </StyledModal>
       </>
