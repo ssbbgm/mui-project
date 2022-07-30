@@ -4,14 +4,23 @@ import Navbar from './Components/Navbar';
 import Rightbar from './Components/Rightbar';
 import Feed from './Components/Feed';
 import Add from './Components/Add'
-import {Box, Stack} from '@mui/material';
+import { useState } from 'react';
+import {Box, createTheme, Stack, ThemeProvider} from '@mui/material';
 
 
 
 function App() {
 
+  const [mode, setMode] = useState('light');
+  const darkTheme = createTheme ({
+    palette:{
+      mode: mode
+    }
+  })
+
   return (
-      <Box>
+    <ThemeProvider theme={darkTheme}>
+      <Box bgcolor={'background.default'} color={'text.primary'}>
         <Navbar />
         <Stack direction='row' spacing={2} justifyContent='space-between'>
           <Sidebar />
@@ -20,6 +29,7 @@ function App() {
         </Stack>
         <Add />
       </Box>
+    </ThemeProvider>
   );
 }
 
