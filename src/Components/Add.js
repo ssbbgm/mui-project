@@ -1,4 +1,4 @@
-import { Tooltip, Fab, Modal, Typography, Box, styled, Avatar, TextField, Stack} from '@mui/material';
+import { Tooltip, Fab, Modal, Typography, Box, styled, Avatar, TextField, Stack, Button, ButtonGroup} from '@mui/material';
 import { 
     Add as AddIcon, 
     DateRange,
@@ -37,7 +37,7 @@ function Add() {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
-        <Box width={400} height={280} bgcolor='white' borderRadius={5}>
+        <Box width={400} height={320} bgcolor='white' borderRadius={5}>
           <Typography variant='h6' color='gray' textAlign='center' mt={2}>Create post</Typography>
           <UserBox>
             <Avatar
@@ -62,6 +62,10 @@ function Add() {
                 <VideoCameraBack color="success" />
                 <PersonAdd color="error" />
           </Stack>
+          <ButtonGroup fullWidth variant="contained" aria-label="outlined primary button group" mb={1}>
+            <Button>Post</Button>
+            <Button><DateRange/></Button>
+        </ButtonGroup>
         </Box>
       </StyledModal>
       </>
