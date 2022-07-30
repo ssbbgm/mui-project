@@ -1,8 +1,9 @@
 import React from "react";
+import {Box} from '@mui/material';
 
 const Rightbar = () => {
     return (
-        <div>Rigthbar</div>
+        <Box>Rigthbar</Box>
     )
 };
 
