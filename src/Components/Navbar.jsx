@@ -1,5 +1,5 @@
-import { AppBar, Toolbar, styled, Topography, Typography, Icon, InputBase, Badge, Avatar, Menu, MenuItem} from "@mui/material";
-import { Pets, Mail, Notifications, SettingsInputAntennaTwoTone } from '@mui/icons-material'
+import { AppBar, Toolbar, styled, Typography, InputBase, Badge, Avatar, Menu, MenuItem} from "@mui/material";
+import { Pets, Mail, Notifications } from '@mui/icons-material'
 import spencer from '../Images/spencer.jpg';
 import React, { useState } from "react";
 
